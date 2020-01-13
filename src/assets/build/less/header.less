@@ -1,0 +1,328 @@
+/*
+ * Component: Main Header
+ * ----------------------
+ */
+
+.main-header {
+  position: relative;
+  max-height: 100px;
+  z-index: 1030;
+  padding-bottom: 60px;
+  background-color: #f5f5f5;
+
+ 
+  //Navbar
+  > .navbar {
+    .transition(margin-left @transition-speed @transition-fn);
+    margin-bottom: 0;
+    margin-left: @sidebar-width;
+    border: none;
+    min-height: @navbar-height;
+    border-radius: 0;
+    .layout-top-nav & {
+      margin-left: 0;
+    }
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .dropdown-toggle{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+
+.text-header-profile{
+  padding: 10px 10px 10px 5px;
+  h6{
+    color: @brown;
+  }
+}
+
+  //Navbar search text input
+  #navbar-search-input.form-control {
+    background: rgba(255, 255, 255, .2);
+    border-color: transparent;
+    &:focus,
+    &:active {
+      border-color: rgba(0, 0, 0, .1);
+      background: rgba(255, 255, 255, .9);
+    }
+    &::-moz-placeholder {
+      color: #ccc;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: #ccc;
+    }
+    &::-webkit-input-placeholder {
+      color: #ccc;
+    }
+  }
+  //Navbar Right Menu
+  .navbar-custom-menu,
+  .navbar-right {
+    margin-right: 15px;
+    float: right;
+    @media (max-width: @screen-sm-max) {
+      a {
+        color: inherit;
+        background: transparent;
+      }
+    }
+  }
+  .navbar-right {
+    @media (max-width: @screen-header-collapse) {
+      float: none;
+      .navbar-collapse & {
+        margin: 7.5px -15px;
+      }
+
+      > li {
+        color: inherit;
+        border: 0;
+      }
+    }
+  }
+
+.logo-main{
+  background-image: url('../img/logo.png');
+  width: 162px;
+  height: 55px;
+  padding:0px;
+  margin-top: -15px;
+}
+
+
+  //Navbar toggle button
+  .sidebar-toggle {
+    float: left;
+    background-color: transparent;
+    background-image: none;
+    padding: @navbar-padding-vertical @navbar-padding-horizontal;
+    //Add the fontawesome bars icon
+    font-family: fontAwesome;
+    &:before {
+      content: "\f0c9";
+    }
+    &:hover {
+      color: #fff;
+    }
+    &:focus,
+    &:active {
+      background: transparent;
+    }
+  }
+  .sidebar-toggle .icon-bar {
+    display: none;
+  }
+  //Navbar User Menu
+  .navbar .nav > li.user > a {
+    > .fa,
+    > .glyphicon,
+    > .ion {
+      margin-right: 5px;
+    }
+  }
+
+  //Labels in navbar
+  .navbar .nav > li > a > .label {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9;
+  }
+
+  //Logo bar
+  .logo {
+    .transition(width @transition-speed @transition-fn);
+    display: block;
+    float: left;
+    height: @navbar-height;
+    text-align: center;
+    width: @sidebar-width;
+    padding: 0 15px;
+    font-weight: 300;
+    overflow: hidden;
+    background-color: #735d5e!important;
+
+    //Add support to sidebar mini by allowing the user to create
+    //2 logo designs. mini and lg
+    .logo-lg {
+      //should be visibile when sidebar isn't collapsed
+      display: block;
+
+    }
+    .logo-mini {
+      display: none;
+    }
+  }
+  //Navbar Brand. Alternative logo with layout-top-nav
+  .navbar-brand {
+    color: #fff;
+  }
+}
+
+
+.nav-border-icon{
+   border-radius: 10px;
+    border: 2px solid  @brown;
+    padding: 0px;
+    font-weight: bold;
+    margin:10px 5px 10px 0px;
+    height: 32px;
+}
+.nav-border-icon-single{
+   border-radius: 10px;
+    border: 2px solid @brown;
+    font-weight: bold;
+    padding: 0px;
+    margin:10px 5px 10px 0px;
+    height: 32px;
+
+}
+
+.single-nav > li > a{
+  padding-top: 5px!important;
+
+}
+ .main-header .navbar .nav > li > a:hover,  .main-header .navbar .nav > li > a:active,  .main-header .navbar .nav > li > a:focus,  .main-header .navbar .nav .open > a,  .main-header .navbar .nav .open > a:hover,  .main-header .navbar .nav .open > a:focus,  .main-header .navbar .nav > .active > a{
+  
+  height: 32px!important;
+  
+}
+
+
+// Content Header
+.content-header {
+  position: relative;
+  padding: 15px 15px 0 25px;
+  // Header Text
+  > h1 {
+    margin: 0;
+    font-size: 18px;
+    color: @black;
+    > small {
+      font-size: 14px;
+      display: inline-block;
+      padding-left: 4px;
+      font-weight: normal;
+    }
+  }
+
+  .file-summary-header{
+    display: inline;
+
+   h1{
+    color: @purple;
+    font-size: 18px;
+    display: inline;
+    margin-right: 20px;
+    span{
+      color:darken(@gray, 50%);
+    }
+   }
+   button{
+    margin-top: -10px;
+   }
+  }
+
+  > .breadcrumb {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 5px 5px;
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    .border-radius(2px);
+    > li > a {
+      color: #444;
+      text-decoration: none;
+      display: inline-block;
+      > .fa, > .glyphicon, > .ion {
+        margin-right: 5px;
+      }
+    }
+    > li + li:before {
+      content: '>\00a0';
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    > .breadcrumb {
+      position: relative;
+      margin-top: 5px;
+      top: 0;
+      right: 0;
+      float: none;
+      background: @gray;
+      padding-left: 10px;
+      li:before {
+        color: darken(@gray, 20%);
+      }
+    }
+  }
+}
+
+.navbar-toggle {
+  color: #fff;
+  border: 0;
+  margin: 0;
+  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+}
+.navbar-nav{
+  margin-right: 5px;
+}
+
+//Control navbar scaffolding on x-small screens
+@media (max-width: @screen-sm-max) {
+  .navbar-custom-menu .navbar-nav > li {
+    float: left;
+  }
+
+  //Dont't let links get full width
+  .navbar-custom-menu .navbar-nav {
+    margin: 0;
+    float: left;
+  }
+
+  .navbar-custom-menu .navbar-nav > li > a {
+
+    line-height: 20px;
+  }
+}
+
+// Collapse header
+@media (max-width: @screen-header-collapse) {
+  .main-header {
+    position: relative;
+    .logo,
+    .navbar {
+      width: 100%;
+      float: none;
+    }
+    .navbar {
+      margin: 0;
+    }
+    .navbar-custom-menu {
+      float: right;
+    }
+  }
+}
+
+.navbar-collapse.pull-left {
+  @media (max-width: @screen-sm-max) {
+    float: none !important;
+    + .navbar-custom-menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 40px;
+    }
+  }
+}

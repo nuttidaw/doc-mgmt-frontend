@@ -1,0 +1,363 @@
+/*!
+
+!*/
+//fonts
+
+
+@font-face {
+    font-family: 'krungsri_simple_bold';
+    src: url('../font/krungsri_simple_bol-webfont.woff2') format('woff2'),
+         url('../font/krungsri_simple_bol-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+
+}
+@font-face {
+    font-family: 'krungsri_simple_med';
+    src: url('../font/krungsri_simple_med-webfont.woff2') format('woff2'),
+         url('../font/krungsri_simple_med-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'krungsri_simple';
+    src: url('../font/krungsri_simple-webfont.woff2') format('woff2'),
+         url('../font/krungsri_simple-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*
+ * Skin: 
+ * ------------
+ */
+
+/* Font */
+
+.fnt-trad{
+  font-family: arial, sans-serif!important;
+}
+.fnt-moder{
+  font-family: 'krungsri_simple'!important;;
+}
+
+
+
+  //Navbar
+  .main-header {       
+    .navbar {
+      
+        background-color: @yellow;
+
+      .navbar-variant(@yellow; @white);
+      .sidebar-toggle {
+        color: @white;
+        &:hover {
+          background-color: darken(@yellow, 5%);
+        }
+      }
+      @media (max-width: @screen-header-collapse) {
+        .dropdown-menu {
+          li {
+            &.divider {
+              background-color: rgba(255, 255, 255, 0.1);
+            }
+            a {
+              color: @white;
+              &:hover {
+                background: darken(@yellow, 5%);
+              }
+            }
+          }
+        }
+      } 
+    }
+    //Logo
+    .logo {
+      .logo-variant(darken(@yellow, 5%));
+    }
+
+    li.user-header {
+      background-color: @yellow;
+
+    }
+  }
+
+  //Content Header
+  .content-header {
+    background: transparent;
+  }
+
+
+
+
+//Box Header
+  .box-setting{
+
+      .box-header{
+    background-color:@brown-2;
+
+      } 
+      .box-title{
+        color: @white;
+      }
+      span{
+        color: @white;
+      }
+
+        .col-fixed-1140{
+          width:1140px;
+        
+        }
+        .setting-title{
+         padding-left: 30px;
+
+        }
+        label { 
+              padding-top: 5px;
+             } 
+        .setting-text{
+            margin-top: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            float: none;
+            font-family: arial, sans-serif;
+        }
+  }
+
+
+//Space Surrond//
+
+.h-divider{
+ margin-top:5px;
+ margin-bottom:15px;
+
+ height:1px;
+ width:100%;
+ border-top:1px solid @gray;
+}
+
+.spacer10 {
+  height: 10px;
+}
+.spacer20 {
+  height: 20px;
+}
+
+.text-caption-before-table{
+  padding-bottom: 10px;
+  h4{
+  display:inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 1.6em;
+  line-height: 1.6em;
+  vertical-align: middle;
+  
+  }
+  .btn-product-group{
+    display:inline-block;
+
+  }
+}
+
+
+
+/*** History Search box ***/
+
+.history-search-box{
+ label>strong{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+
+ }
+
+}
+
+  //Create the sidebar skin
+  .skin-dark-sidebar(@yellow);
+
+//for validate field
+//
+      .is-invalid{
+      border: 1px solid red!important;
+      }
+        .invalid-feedback {
+          display: block;
+         
+          color:red!important;
+        }
+
+.title-doc{
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.wrapper-doc{
+  padding-top: 40px;
+
+  .strike{
+    margin-bottom: 20px!important;
+  }
+
+  .line-center{
+    margin:0 20px 0 20px;
+    padding:0 10px 0px 10px;
+    background:#fff;
+    display:inline-block;
+}
+    h2{
+        
+        text-align:left;
+        position:relative;
+        z-index:2;
+        font-size: 16px;
+        
+    }
+    h2:after{
+        content:"";
+        position:absolute;
+        top:50%;
+        left:0;
+        right:0;
+        border-top:solid 5px #F5F5F5;
+        z-index:-1;
+    }
+
+
+}
+
+
+#section-tabs
+{
+    font-family: 'krungsri_simple';
+    font-size: 1em;
+    font-weight: 700;
+
+    position: relative;
+
+    margin-top: 15px;
+    padding: 0;
+
+    list-style: none;
+}#section-tabs li
+{
+    font-weight: 700;
+    line-height: 35px;
+
+    position: relative;
+
+    float: left;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 25%;
+    padding: 0 6px;
+
+    cursor: auto;
+    text-align: center;
+    text-decoration: none;
+
+    color: #a7a7a7;
+    border-left: 1px solid #aaa;
+    background: #ddd;
+}#section-tabs li span
+{
+    color: #bababa;
+}#section-tabs li.active
+{
+    cursor: pointer;
+    font-weight: bold;
+    color: #444;
+}#section-tabs li:after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    margin-left: 0;
+
+    content: '';
+}#section-tabs li.current
+{
+    z-index: 999;
+    font-weight: bold;
+    opacity: 1;
+    border-left: none;
+    background: #fff;
+}#section-tabs li.current:after
+{
+    border: 18px solid transparent;
+    border-left: 18px solid #ffda00;
+}
+
+.btn-footer{
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+ 
+
+
+//Bootstrap Variables & Mixins
+//The core bootstrap code have not been modified. These files
+//are included only for reference.
+@import (reference) "../bootstrap-less/mixins.less";
+@import (reference) "../bootstrap-less/variables.less";
+//MISC
+//----
+@import "core.less";
+@import "variables.less";
+@import "mixins.less";
+//COMPONENTS
+//-----------
+@import "header.less";
+@import "sidebar.less";
+@import "sidebar-mini.less";
+@import "control-sidebar.less";
+@import "dropdown.less";
+@import "forms.less";
+@import "progress-bars.less";
+@import "small-box.less";
+@import "boxes.less";
+@import "info-box.less";
+@import "timeline.less";
+@import "buttons.less";
+@import "callout.less";
+@import "alerts.less";
+@import "navs.less";
+@import "products.less";
+@import "table.less";
+@import "labels.less";
+@import "direct-chat.less";
+@import "users-list.less";
+@import "carousel.less";
+@import "modal.less";
+@import "social-widgets.less";
+//PAGES
+//------
+@import "mailbox.less";
+@import "lockscreen.less";
+@import "login_and_register.less";
+@import "404_500_errors.less";
+@import "profile";
+//Plugins
+//--------
+@import "bootstrap-social.less";
+@import "fullcalendar.less";
+@import "select2.less";
+//Miscellaneous
+//-------------
+@import "miscellaneous.less";
+@import "print.less";

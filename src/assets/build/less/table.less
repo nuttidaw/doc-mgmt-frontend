@@ -1,0 +1,244 @@
+/*
+ * Component: Table
+ * ----------------
+ */
+
+.table{
+  //Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-top: 1px solid @box-border-color;
+      }
+    }
+  }
+  //thead cells
+  > thead > tr > th {
+    border-bottom: 2px solid @box-border-color;
+    background-color: @gray;
+     vertical-align: middle!important;  
+  }
+  //progress bars in tables
+  tr td .progress {
+    margin-top: 5px;
+  }
+
+  .col-time{
+    width: 150px;
+  }
+
+}
+
+.table > tbody > tr > td {
+     vertical-align: middle!important;
+      font-family: arial, sans-serif;
+}
+
+
+
+
+.table-fixed{
+  //Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-top: 1px solid @box-border-color;
+      }
+    }
+  }
+  //thead cells
+  > thead > tr > th {
+    border-bottom: 2px solid @box-border-color;
+    background-color: @gray;
+     vertical-align: middle!important;  
+  }
+  //progress bars in tables
+  tr td .progress {
+    margin-top: 5px;
+  }
+
+  .col-time{
+    width: 150px;
+  }
+
+}
+
+.table-fixed > tbody > tr > td {
+     vertical-align: middle!important;
+      font-family: arial, sans-serif;
+}
+
+.table-2-button{
+    td:last-child {
+    flex: 1;
+    display:inline-block;
+    /*width: 120px;*/
+    /* to keep IE happy */
+  }
+}
+
+ 
+
+
+//Bordered Table
+.table-bordered {
+  border: 1px solid @box-border-color;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid @box-border-color;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+.table.no-border {
+  &,
+  td,
+  th {
+    border: 0;
+  }
+}
+
+
+
+
+
+
+/*fix head*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:darkgray;
+}
+ 
+table {
+  border-collapse:collapse;
+ }
+
+td {
+  border:1px solid lightgray;
+}
+
+.table-fixed-wrapper{
+  max-width:100%;
+  overflow-x:auto;
+  background-color:lightgray;
+}
+
+.table-fixed {
+  background-color:transparent;
+  min-width:100%;
+}
+
+.table-fixed thead,
+.table-fixed tbody {
+  display:block;
+}
+
+.table-fixed thead {
+  
+}
+
+.table-fixed thead > tr {
+  width:calc(100% - 1px);
+}
+
+.table-fixed tbody {
+  max-height:200px;
+  overflow-x:hidden;
+ }
+ 
+ .table-fixed tr {
+   display:flex;
+ }
+ 
+.table-fixed td{
+  overflow:hidden;
+  /*text-overflow:ellipsis;
+  white-space:nowrap;*/
+  padding:3px 10px;
+ width:100%;
+  background-color:white;
+}
+
+.table-fixed td:last-child {
+    flex: 1;
+    display:inline-block;
+    /* to keep IE happy */
+}
+
+.table-fixed th {
+  overflow:hidden;
+  /*text-overflow:ellipsis;*/
+  white-space:nowrap;
+  padding:15px 10px 15px 10px;
+  width:100%;
+  background-color:white;
+  text-decoration: bold;
+}
+
+.table-fixed th {
+  background-color:lightgray;
+}
+
+.table-fixed tr:nth-child(2n) > td {
+  background-color:lighten(@gray, 10%);
+}
+
+.table-fixed th {
+  border-right:1px solid darken(@gray, 20%);
+}
+
+.table-fixed th:last-child {
+    flex: 1;
+    display:inline-block;
+    border: none;
+    /* to keep IE happy */
+}
+
+
+
+
+.table-fixed th:first-child {
+  border-left:0;
+}
+
+.table-fixed{
+  tr:nth-child(even){background-color: #f2f2f2;}
+/*tr:hover {background-color: #ddd;} */ 
+}
+
+
+
+.btnwidth{
+  width: 105px;
+}
+
+
+
+
+
+
+
+
+
