@@ -1,1 +1,146 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "assets/bootstrap/css/bootstrap.min.css";
+@import "assets/dist/css/style.min.css";
+@import 'assets/dist/css/font-awesome.css';
+@import 'assets/dist/css/roller.css';
+@import 'assets/dist/css/datatable-implement.css';
+@import 'assets/dist/css/dropdown-language.css';
+@import 'assets/dist/css/checkbox.css';
+@import 'assets/dist/css/checkbox-inline.css';
+@import 'assets/dist/css/checkbox-normal.css';
+@import 'assets/dist/css/checkbox-w100.css';
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+html, body {
+  height: 100%;
+}
+
+.box-header-search {
+  background-color: #756158;
+  border-bottom: 1px solid #f4f4f4;
+  color: #ffffff;
+}
+
+.mydp .selectiondisabled {
+  width: 100% !important;
+}
+
+my-date-picker.ng-invalid.is-invalid-date .mydp {
+  border: 1px solid red !important;
+}
+
+my-date-picker.ng-valid.is-invalid-date .mydp {
+  border: 1px solid red !important;
+}
+
+ng-select.is-invalid-select .ng-select-container {
+  border-color: red !important;
+}
+
+.ng-select.custom.ng-select-opened .ng-select-container {
+  border-color: #ffd503 !important;
+}
+
+.ng-select.custom.ng-select-focused .ng-select-container {
+  border-color: #ffd503 !important;
+  box-shadow: none;
+}
+
+.col-form-label {
+  font-weight: bold !important;
+}
+
+.text-weight-bold {
+  font-weight: bold !important;
+}
+
+.myAlert-top {
+  position: fixed;
+  top: 52px;
+  z-index: 9999;
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.alert {
+  border-radius: 0px !important;
+}
+
+.auto-hide {
+  display: none;
+}
+
+.font-weight-normal {
+  font-weight: normal !important;
+}
+
+.form-table {
+  display: table;
+  width: 100%;
+}
+
+.form-table-cell {
+  display: table-cell;
+  padding: 2px;
+}
+
+.form-table-cell-underline {
+  display: table-cell;
+  padding: 2px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding-left: 10px !important;
+}
+
+.hr-custom {
+  height: 2px;
+  border: none;
+  color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, .1);
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-data-available {
+  text-align: center;
+}
+
+.dataTables_empty {
+  display: none;
+}
+
+.overflow-ellipsis {
+  position: relative;
+}
+
+.overflow-ellipsis:before {
+  content: '&nbsp;';
+  visibility: hidden;
+}
+
+.overflow-ellipsis span {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fa-color-red {
+  color: #dd4b39;
+}
+
+.fa-color-green {
+  color: #00a65a;
+}
+
+.fa-color-yellow {
+  color: #ffd503;
+}
+
+/* .btn-primary:focus {
+  background-color: #ffd503 !important;
+  color: #756158 !important
+} */
