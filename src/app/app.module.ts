@@ -17,6 +17,10 @@ import { FollowstatusComponent } from './modules/circulation/followstatus/follow
 import { ApproveComponent } from './modules/circulation/approve/approve.component';
 import { FiledisposalmgmtComponent } from './modules/filedisposalmgmt/filedisposalmgmt.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { EventlogComponent } from './modules/eventlog/eventlog.component';
+import { FilerecordingsystemComponent } from './modules/filerecordingsystem/filerecordingsystem.component';
+import { MaindatamgmtComponent } from './modules/maindatamgmt/maindatamgmt.component';
+import { ImportfilesystemComponent } from './modules/importfilesystem/importfilesystem.component';
 
 
 @NgModule({
@@ -35,7 +39,11 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
     FollowstatusComponent,
     ApproveComponent,
     FiledisposalmgmtComponent,
-    DashboardComponent
+    DashboardComponent,
+    EventlogComponent,
+    FilerecordingsystemComponent,
+    MaindatamgmtComponent,
+    ImportfilesystemComponent
   ],
   imports: [
     BrowserModule
