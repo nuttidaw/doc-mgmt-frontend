@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './modules/login/components/login/login.component';
 import { HomeComponent } from './modules/home/components/home/home.component';
@@ -16,7 +15,8 @@ import { EventlogComponent } from './modules/eventlog/components/eventlog/eventl
 import { FilerecordingsystemComponent } from './modules/filerecordingsystem/components/filerecordingsystem/filerecordingsystem.component';
 import { MaindatamgmtComponent } from './modules/maindatamgmt/components/maindatamgmt/maindatamgmt.component';
 import { ImportfilesystemComponent } from './modules/importfilesystem/components/importfilesystem/importfilesystem.component';
-
+import { NavbarComponent } from './layouts/navbar/navbar.component';
+import { ModalComponent } from './layouts/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,9 @@ import { ImportfilesystemComponent } from './modules/importfilesystem/components
     EventlogComponent,
     FilerecordingsystemComponent,
     MaindatamgmtComponent,
-    ImportfilesystemComponent
+    ImportfilesystemComponent,
+    NavbarComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule
